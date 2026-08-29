@@ -1,13 +1,13 @@
 {
   "id": "barktrace-sqlite",
   "name": "BarkTrace (SQLite)",
-  "version": "sha-071bf79",
+  "version": "0.13.0",
   "description": "Single-node BarkTrace observability platform with embedded SQLite storage, Sentry SDK compatibility, MCP access, and mandatory OIDC login.",
   "logo": "barktrace.svg",
   "links": {
     "github": "https://github.com/barktrace/bark",
     "website": "https://github.com/barktrace/bark",
-    "docs": "https://github.com/barktrace/bark/tree/v0.1.0/docs"
+    "docs": "https://github.com/barktrace/bark/tree/v0.13.0/docs"
   },
   "tags": [
     "observability",
