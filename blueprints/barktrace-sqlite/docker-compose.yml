@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   barktrace-sqlite:
-    image: ghcr.io/barktrace/bark:0.15.0
+    image: ghcr.io/barktrace/bark:0.28.0
     restart: unless-stopped
     environment:
       BARKTRACE_PUBLIC_URL: https://${BARKTRACE_HOST}
