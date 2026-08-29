@@ -1,0 +1,19 @@
+{
+  "id": "barktrace-postgres",
+  "name": "BarkTrace (PostgreSQL)",
+  "version": "0.5.0",
+  "description": "BarkTrace observability platform backed by PostgreSQL, with Sentry SDK compatibility, MCP access, and mandatory OIDC login.",
+  "logo": "barktrace.svg",
+  "links": {
+    "github": "https://github.com/barktrace/bark",
+    "website": "https://github.com/barktrace/bark",
+    "docs": "https://github.com/barktrace/bark/tree/v0.5.0/docs"
+  },
+  "tags": [
+    "observability",
+    "monitoring",
+    "sentry",
+    "postgresql",
+    "mcp"
+  ]
+}

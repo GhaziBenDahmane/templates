@@ -1,0 +1,29 @@
+[variables]
+main_domain = "${domain}"
+postgres_password = "${password:32}"
+oidc_issuer_url = "https://id.example.com"
+oidc_client_id = "barktrace"
+oidc_client_secret = "${password:32}"
+default_org_name = "Default"
+default_org_slug = "default"
+mcp_token = "${base64:32}"
+
+[config]
+env = [
+  "BARKTRACE_HOST=${main_domain}",
+  "POSTGRES_PASSWORD=${postgres_password}",
+  "BARKTRACE_DEFAULT_ORG_NAME=${default_org_name}",
+  "BARKTRACE_DEFAULT_ORG_SLUG=${default_org_slug}",
+  "BARKTRACE_MCP_TOKEN=${mcp_token}",
+  "OIDC_ISSUER_URL=${oidc_issuer_url}",
+  "OIDC_CLIENT_ID=${oidc_client_id}",
+  "OIDC_CLIENT_SECRET=${oidc_client_secret}",
+  "OIDC_PROVIDER_NAME=SSO",
+]
+mounts = []
+
+[[config.domains]]
+serviceName = "barktrace-postgres"
+port = 8080
+host = "${main_domain}"
+path = "/"
